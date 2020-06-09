@@ -970,6 +970,26 @@ namespace CSRedis.NetCore
 
 
         /// <summary>
+        /// Pop minimum member in a sorted set
+        /// </summary>
+        /// <param name="key">Sorted set key</param>
+        /// <returns>element that has minimum score </returns>
+        Tuple<string, double> ZPopMin(string key);
+
+
+
+
+        /// <summary>
+        /// Pop maximum member in a sorted set
+        /// </summary>
+        /// <param name="key">Sorted set key</param>
+        /// <returns>element that has maximum score </returns>
+        Tuple<string, double> ZPopMax(string key);
+
+
+
+
+        /// <summary>
         ///
         /// </summary>
         /// <param name="key">Sorted set key</param>
